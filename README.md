@@ -1,7 +1,7 @@
-# dandora-finances
+## dandora-finances
 FINANÇAS E CONTABILIDADE PESSOAL
 
-# Escopos
+## Escopos
 - CADASTRO DE USUARIO
 - LOGIN
   - cpf/email, senha
@@ -20,36 +20,37 @@ FINANÇAS E CONTABILIDADE PESSOAL
 
 ——
 
-# Contratos
+## Tecnologias
 ```
 BACKEND: PHP
-FRONT END: HTML, CSS, JAVASCRIPT COM JQUERY E BOOTSTRAP
+FRONTEND: HTML, CSS, JAVASCRIPT E BOOTSTRAP + JQUERY
 PHP PROCEDURAL + OO
 GIT
 ```
 
 ——
 
-# Pastas
+## Pastas
 ```
 Backend:
 - routes
 - source 
-  - views
-  - model
-  - controller
+    - views
+    - model
+    - controller
 ```
 
 ```
-Frontend pastas:
+Frontend:
 - public
     - assets
-       - css
-       - js
+        - css
+        - js
+        - img 
 - vendor
-  - bootstrap
+    - bootstrap
 ```
 
-# Convenção
-Inicial do nome + descrição tarefa (minúsculo)
+## Convenções
+`branch`: Inicial do nome + descrição tarefa (minúsculo)
 ex: `JV-commit-inicial`
