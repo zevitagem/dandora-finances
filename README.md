@@ -49,3 +49,7 @@ Frontend pastas:
 - vendor
   - bootstrap
 ```
+
+# Convenção
+Inicial do nome + descrição tarefa (minúsculo)
+ex: `JV-commit-inicial`
