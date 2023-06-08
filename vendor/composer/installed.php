@@ -1,0 +1,56 @@
+<?php return array(
+    'root' => array(
+        'name' => 'dandora_group/dandora-finances',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '886f8465a8761f2dddefe6965f686b8a6f121d9f',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => true,
+    ),
+    'versions' => array(
+        'components/jquery' => array(
+            'pretty_version' => '3.5.1',
+            'version' => '3.5.1.0',
+            'reference' => 'b33e8f0f9a1cb2ae390cf05d766a900b53d2125b',
+            'type' => 'component',
+            'install_path' => __DIR__ . '/../components/jquery',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'dandora_group/dandora-finances' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '886f8465a8761f2dddefe6965f686b8a6f121d9f',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'nnnick/chartjs' => array(
+            'pretty_version' => 'v4.3.0',
+            'version' => '4.3.0.0',
+            'reference' => '83ba8fd77689645d0f915a6c8b4881b882be5276',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../nnnick/chartjs',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'twbs/bootstrap' => array(
+            'pretty_version' => 'v5.3.0',
+            'version' => '5.3.0.0',
+            'reference' => '60098ac499d30aa50575b0b7137391c06ef25429',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../twbs/bootstrap',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'twitter/bootstrap' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => 'v5.3.0',
+            ),
+        ),
+    ),
+);
