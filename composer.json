@@ -1,0 +1,25 @@
+{
+  "name": "dandora_group/dandora-finances",
+  "description": "dandora  finances app",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "dandora group",
+      "email": "dandora@dandora.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+
+    },
+    "files": [
+
+    ]
+  },
+  "require": {
+    "php": "8.0"
+
+  }
+
+}
