@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title> Contador </title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <section>
+        <div>
+            <button class="counter" id="sum"> + </button>
+            <span class="value" id="value"> 0 </span>
+            <button class="counter" id="minus"> - </button>
+        </div>
+        <button class="reset" id="clear"> Resetar </button>
+    </section>
+
+    <script type="module">
+
+        // Instancias chamando HTML
+        const sum = document.getElementById('sum')
+        const minus = document.getElementById('minus')
+        const clear = document.getElementById('clear')
+
+        let counter = 0;
+        let interval = 0
+
+        // Eventos
+        sum.addEventListener('click', handleSum)
+        minus.addEventListener('click', handleMinus)
+        clear.addEventListener('click', handleClear)
+
+        // Escrevendo no HTML
+        const updateValue = () => {
+            value.innerHTML = counter
+        }
+
+        // Retorno
+        function handleSum() {
+            interval = setInterval(() => {
+                counter += 1;
+                updateValue();
+            }, 100)
+        }
+
+        function handleMinus() {
+            interval = setInterval(() => {
+                counter -= 1;
+                updateValue();
+            }, 100)
+        }
+
+        function handleClear() {
+            counter = 0;
+            updateValue();
+        }
+
+        document.addEventListener('mouseup', () => clearInterval(interval))
+    </script>
+</body>
+</html>

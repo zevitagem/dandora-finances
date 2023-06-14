@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+:root {
+
+}
+
+body {
+  name: var(--);
+}
+
+  aside {
+
+  }
+
+    /* Perfil */
+
+    /* Regiao */
+
+  main {
+
+  }
+
+    /* Search */
+
+    /* Album */
