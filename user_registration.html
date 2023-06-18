@@ -13,29 +13,29 @@
       <h1 class="text-center">Cadastro de Usuário</h1>
       <div class="form-group">
         <!-- <label for="name">Seu Nome</label> -->
-        <input type="text" class="form-control" placeholder="Digite seu nome" id="name" name="name" autofocus required>
+        <input type="text" class="form-control" placeholder="Digite seu nome" id="name" name="name" autofocus required minlength="3" maxlength="80">
       </div>
 
       <div class="form-group">
         <!-- <label for="lastname">Seu Sobrenome</label> -->
-        <input type="text" class="form-control" placeholder="Digite seu sobrenome" id="lastname" name="lastname" onBlur="validate();" required>
+        <input type="text" class="form-control" placeholder="Digite seu sobrenome" id="lastname" name="lastname" onBlur="validate();" required minlength="3" maxlength="80">
       </div>
 
       <div class="form-group">
         <!-- <label for="lastname">Seu Sobrenome</label> -->
-        <input type="tel" class="form-control" placeholder="Digite seu cpf" id="cpf" name="cpf" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+        <input type="tel" class="form-control" placeholder="Digite seu cpf" id="cpf" name="cpf" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required maxlength="11">
       </div>
 
 
       <div class="form-group">
         <!-- <label for="exampleInputEmail1">Endereço de email</label> -->
-        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Digite seu email" id="email" name="email" required>
+        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Digite seu email" id="email" name="email" required minlength="3" maxlength="30">
       </div>
 
       <div class="form-group">
         <!-- <label for="exampleInputPassword1">Senha</label> -->
         <input type="password" class="form-control" placeholder="Digite uma senha" id="password" name="password" required>
-        <input type="password" class="form-control" placeholder="Redigite uma senha" id="cpassword" name="cpassword" required>
+        <input type="password" class="form-control" placeholder="Redigite uma senha" id="cpassword" name="cpassword" required minlength="3" maxlength="30">
       </div>
 
       <div style="text-align: center;">
